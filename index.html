@@ -2542,10 +2542,15 @@ body{background:#080a08;color:#fff;font-family:'Roboto',sans-serif}
 .hero-sub{font-size:13px;color:#ffffff60;letter-spacing:2px;line-height:1.8;max-width:500px}
 .apps{padding:48px 48px 80px}
 .apps-label{font-size:9px;letter-spacing:4px;color:#ffffff30;margin-bottom:32px}
-.app-card{background:#0a0c0a;border:1px solid #ffffff0f;border-radius:16px;padding:28px;display:flex;align-items:center;gap:24px;max-width:520px;margin-bottom:16px;transition:border-color 0.2s;cursor:pointer}
+.app-card{background:#0a0c0a;border:1px solid #ffffff0f;border-radius:16px;padding:28px;display:flex;align-items:center;gap:24px;max-width:520px;margin-bottom:16px;transition:border-color 0.2s,opacity 0.2s;cursor:pointer}
 .app-card:hover{border-color:#22c55e30}
 .app-card.more{opacity:0.4}
-.app-card.more:hover{border-color:#ffffff15;opacity:0.5}
+.app-card.more:hover{border-color:#06b6d440;opacity:0.8}
+.app-card.more .app-icon{border-color:#ffffff10}
+.app-card.more:hover .app-icon{border-color:#06b6d430}
+.app-card.more:hover .app-icon-more{color:#06b6d4}
+.app-card.more:hover .badge-more{color:#06b6d4;background:#06b6d412;border-color:#06b6d430}
+.app-card.more .app-icon,.app-card.more .app-icon-more,.app-card.more .badge-more{transition:border-color .2s,color .2s,background-color .2s}
 .app-icon{width:56px;height:56px;background:#080a08;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid #22c55e30}
 .app-icon-text{font-size:9px;font-weight:700;letter-spacing:2px;color:#22c55e}
 .app-icon-more{font-size:18px;color:#ffffff20}
@@ -2641,7 +2646,7 @@ body{min-height:100vh;display:flex;flex-direction:column}
     </div>
 
     <div class="app-card more">
-      <div class="app-icon" style="border-color:#ffffff10">
+      <div class="app-icon">
         <div class="app-icon-more">···</div>
       </div>
       <div>
